@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(images/dark3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  
+  /* align items center vertically and horizontally  */
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items:center !important;
+    height: 100vh;
+  }
+  .form{
+    width: 450px;
+    height: 500px;
+    background-color: rgba(41, 39, 39, 0.3);
+  
+    outline: solid 2px white;
+    border-radius: 10px;
+  
+  }
+  
+  .formsmall{
+    width: 300px;
+    height: 120px;
+    background-color: rgba(41, 39, 39, 0.3);
+    outline: solid 2px white;
+    border-radius: 10px;
+    top: 50%;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .form2{
+    width: 350px;
+    height: 400px;
+    background-color: rgba(41, 39, 39, 0.3);
+    box-shadow: 0 5px 30px black;
+  }
+  .btn button {
+    padding: 3px;
+    margin: 30px 0px 40px 30px;
+    border-style: none;
+    background-color: transparent;
+    color: beige;
+    font-size: 18px;
+    font-weight: 550;
+  }
+  
+  .newacc{
+    padding: 15px;
+    margin: 10px;
+    background-color: transparent;
+    font-weight: 550;
+    font-size: 18px;
+    text-align:center;
+    color: beige;
+  }
+  
+  .newacc2{
+    padding: 30px;
+    margin: 30px 30px 30px 30px;
+    background-color: transparent;
+    font-weight: 550;
+    font-size: 18px;
+    text-align:center;
+    color: beige;
+  }
+  .formGroup{
+    display: flex;
+    justify-content: center;
+  }
+  .formGroup input{
+    border: none;
+    width: 80%;
+    border-bottom: 2px solid white;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+  }
+  
+  .login-form input{
+    border: none;
+    width: 80%;
+    border-bottom: 2px solid white;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: normal;
+    background-color: transparent;
+  
+  }
+  
+  .fieldset input{
+    border: none;
+    width: 80%;
+    border-bottom: 2px solid white;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+  }
+  input:focus {
+    outline: none !important;
+    border-bottom: 2px solid rgb(91, 243, 131);
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  
+  ::placeholder {
+    color: white;
+  }
+  .checkBox{
+    display: flex;
+    justify-content: center;
+    margin: 16px!important;
+  }
+  
+  #checkbox{
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+  }
+  .text{
+    color: rgb(199, 197, 197);
+    font-size: 13px;
+  }
+  .btn2{
+    padding: 10px 5px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: green;
+    border-style: none;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .loginb{
+    padding: 7px 15px;
+    height: 35px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: green;
+    border-style: none;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .logbtn{
+    background-color: green;
+    color: beige;
+  }
+  .logbtn:hover{
+    background-color: #9fd3c7;
+  
+  }
+  
+  .btn2:hover{
+    background-color: #9fd3c7;
+    color: black;
+  }
+  
+  .loginb:hover{
+    background-color: #9fd3c7;
+    color: black;
+  }
+  .btn button:hover{
+    border-bottom: 2px solid rgb(91, 243, 131);
+  }
+  
+  a:link{
+    color: beige;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited{
+    color: beige;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover{
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active{
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  
+  }
+  .col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+  }
+  
+  .col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+  }
+  
+  /* hide signup form */
+  .login{
+    display: none;
+  }
+  
+  /* Login form code */
+  .login{
+    margin-top: 40px;
+  }
+  .login .checkBox{
+    margin-top: 30px !important;
+  }
+  
+  
+  *{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  
+  
+  
+  .login-form{
+    text-align: center;
+    width: 350px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    color: black;
+    cursor: pointer;
+    border: solid 2px white;
+    border-radius: 15px;
+  }
+  
+  
+  
+  
+  .login-form h1{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px 0;
+  }
+  
+  .login-form p{
+    font-size: 20px;
+    margin: 15px 0;
+  }
+  
+  .login-form input{
+    font-size: 16px;
+    width: 240px;
+    padding: 15px 10px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    background: transparent;
+  }
+  
+  .login-form button{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 15px;
+    width: 50%;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  
+  .login-form button:hover{
+    color: white;
+    background-color: black;
+    transition: background 0.5s;
+  }
+  
+  
+  
+  .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .or{
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  
+  .col-3 img:hover{
+    transform: scale(1.25);
+  }
+  
+  .col-3 img{
+    padding-bottom: 20px;
+  }
+  
+  .title{
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 35px;
+    color: beige;
+  }
+  
+  .logo{
+    border-radius: 5px;
+    height: 100px;
+    width: 120px;
+    display: block;
+  
+  
+  }
+  
+  .login-form input{
+    width: 100%;
+  
+    border-bottom: 1px 1px solid tomato;
+  }
+  
+  .iwl{
+    color: beige;
+    text-align: left;
+    font-size: 60px;
+  
+  }
+  
+  .setup{
+    color: beige;
+    text-align: left;
+    font-size: 16px;
+  }

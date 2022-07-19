@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- jQuery CDN Link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Transparent form</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+
+        <h1 class="iwl"> iWL E-com </h1>
+
+        <p class="setup"><i> Streamline your experience <br> by logging into your account</i></p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="formsmall">
+
+          <p class="newacc"> Already have an account? </p>
+  
+          <button type="button" class="loginb"> <a href="login">Login</a> </button>
+
+
+
+        </div>
+
+
+
+        </form>
+
+      </div>
+      <div class="col-2">
+        <div class="form">
+          <!--
+          <div class="btn">
+            <button class="signUpBtn">SIGN UP</button>
+            <button class="loginBtn">LOG IN</button>
+          </div>
+        -->
+          <p class="newacc2"> Create a new account </p>
+          <form class="signup" action="/register" method="POST">
+            <div class="formGroup">
+              <input type="text" id="username" placeholder="User Name" autocomplete="off" name="username">
+            </div>
+            <div class="formGroup">
+              <input type="email" id="emailID" placeholder="Email ID" name="emailID" required autocomplete="off">
+            </div>
+            <div class="formGroup">
+              <input type="password" id="password" placeholder="Password" required autocomplete="off" name="password">
+            </div>
+            <div class="formGroup">
+              <input type="password" id="confirmpassword" placeholder="Confirm Password" required autocomplete="off" name="confirmpassword">
+            </div>
+            <br>
+            <br>
+            <div class="formGroup">
+              <button type="submit" class="btn2">Create Account</button>
+            </div>
+
+
+
+          </form>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="jQuery.js"></script>
+
+</body>
+
+</html>

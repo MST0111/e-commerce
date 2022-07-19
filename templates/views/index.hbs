@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Protein Factory</title>
+
+    <!-- aos css cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="mainpagestyle.css" />
+
+    <!--box icons link-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header>
+      <a href="#" class="logo"
+        ><h1 class="heading">Protein <span>Factory</span></h1>
+      </a>
+
+      <div id="menu-bar" class="fa fa-hamburger"></div>
+
+      <nav class="navbar">
+        <ul>
+          <li><a class="active" href="#gallery">Home</a></li>
+          <li><a href="#gallery">Categories</a></li>
+          <li><a href="#popular">Top Deals</a></li>
+          <li><a href="#products">Exclusive Products</a></li>
+          <li><a href="#review">Reviews</a></li>
+          <i class="bx bx-shopping-bag" id="cart-icon"></i>
+        </ul>
+
+        <!--cart-->
+        <div class="cart">
+          <h2 class="cart-title">Your Cart</h2>
+          <div class="cart-content"></div>
+          <!--total-->
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">Rs 0</div>
+          </div>
+          <!--BUy button-->
+          <button type="button" class="btn-buy">Buy Now</button>
+          <!--cart close-->
+          <i class="bx bx-x" id="close-cart"></i>
+        </div>
+      </nav>
+    </header>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- header section ends -->
+
+    <!-- gallery section starts  -->
+
+    <section class="gallery" id="gallery">
+      <h1 class="heading">our <span>categories</span></h1>
+      <br />
+      <br />
+
+      <div class="box-container">
+        <div class="box" data-aos="fade-up">
+          <img src="/images/chicken (1).png" alt="" />
+          <h3>Chicken</h3>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <img src="/images/dairy.jpg" alt="" />
+          <h3>Dairy products</h3>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <img src="/images/fish.jpg" alt="" />
+          <h3>Seafood</h3>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <img src="/images/mutton.jpg" alt="" />
+          <h3>Mutton</h3>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <img src="/images/img-5.jpg" alt="" />
+          <h3>Exotic Meals</h3>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <img src="/images/img3.jpg" alt="" />
+          <h3>Eggs</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery section ends -->
+
+    <!--SHOP ITEMS-->
+    <section class="shop container" id="popular">
+      <h1 class="heading">Top <span> Deals</span></h1>
+      <br />
+      <!--objects-->
+      <div class="shop-content">
+        <div class="product-box">
+          <img src="/images/product-1.jpg" alt="" class="product-img" />
+          <h2 class="product-title">Product 1</h2>
+          <p>about the product</p>
+          <br />
+          <span class="price">Rs 25</span>
+          <button type="button" class="btn-buy2">Buy Now</button>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+        <div class="product-box">
+          <img src="/images/product-2.jpg" alt="" class="product-img" />
+          <h2 class="product-title">Product 2</h2>
+          <p>about the product</p>
+          <br />
+          <span class="price">Rs 15</span>
+          <button type="button" class="btn-buy2">Buy Now</button>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+        <div class="product-box">
+          <img src="/images/product-3.jpg" alt="" class="product-img" />
+          <h2 class="product-title">Product 3</h2>
+          <p>about the product</p>
+          <br />
+          <span class="price">Rs 70</span>
+          <button type="button" class="btn-buy2">Buy Now</button>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+        <div class="product-box">
+          <img src="/images/product-4.jpg" alt="" class="product-img" />
+          <h2 class="product-title">Product 4</h2>
+          <p>about the product</p>
+          <br />
+          <span class="price">Rs 10</span>
+          <button type="button" class="btn-buy2">Buy Now</button>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+        <div class="product-box">
+          <img src="/images/product-1.jpg" alt="" class="product-img" />
+          <h2 class="product-title">Product 5</h2>
+          <p>about the product</p>
+          <br />
+          <span class="price">Rs 25</span>
+          <button type="button" class="btn-buy2">Buy Now</button>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+        <div class="product-box">
+          <img src="/images/product-2.jpg" alt="" class="product-img" />
+          <h2 class="product-title">Product 6</h2>
+          <p>about the product</p>
+          <br />
+          <span class="price">Rs 15</span>
+          <button type="button" class="btn-buy2">Buy Now</button>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+        <div class="product-box">
+          <img src="/images/product-3.jpg" alt="" class="product-img" />
+          <h2 class="product-title">Product 7</h2>
+          <p>about the product</p>
+          <br />
+          <span class="price">Rs 70.25</span>
+          <button type="button" class="btn-buy2">Buy Now</button>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+        <div class="product-box">
+          <img src="/images/product-4.jpg" alt="" class="product-img" />
+          <h2 class="product-title">Product 8</h2>
+          <p>about the product</p>
+          <br />
+          <span class="price">Rs 10</span>
+          <button type="button" class="btn-buy2">Buy Now</button>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+      </div>
+    </section>
+
+    <!--Exclusive Products-->
+    <section class="products" id="products">
+      <h1 class="heading">Exclusive <span>products</span></h1>
+      <br />
+      <br />
+
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="/images/exc1.png" alt="" />
+          </div>
+          <div class="content">
+            <h3>fresh coffee</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$15.99 <span>$20.99</span></div>
+            <button class="buy">BUY NOW</button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="/images/exc2.png" alt="" />
+          </div>
+          <div class="content">
+            <h3>fresh coffee</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$15.99 <span>$20.99</span></div>
+            <button class="buy">BUY NOW</button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="/images/exc3.png" alt="" />
+          </div>
+          <div class="content">
+            <h3>fresh coffee</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$15.99 <span>$20.99</span></div>
+            <button class="buy">BUY NOW</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review section starts  -->
+
+    <section class="review" id="review">
+      <h1 class="heading">customer's <span>review</span></h1>
+      <br />
+      <br />
+
+      <div class="box-container">
+        <div class="box">
+          <img src="/images/quote-img.png" alt="" class="quote" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla
+            sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi
+            quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.
+          </p>
+          <img src="/images/pic-1.png" class="user" alt="" />
+          <h3>john deo</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="/images/quote-img.png" alt="" class="quote" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla
+            sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi
+            quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.
+          </p>
+          <img src="/images/pic-2.png" class="user" alt="" />
+          <h3>john deo</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="/images/quote-img.png" alt="" class="quote" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla
+            sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi
+            quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.
+          </p>
+          <img src="/images/pic-3.png" class="user" alt="" />
+          <h3>john deo</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- aos js cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="/js/script.js"></script>
+
+    <!-- initializing aos  -->
+
+    <script>
+      AOS.init({
+        delay: 400,
+        duration: 1000,
+      });
+    </script>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
