@@ -6,6 +6,8 @@ const app = express();
 
 const hbs = require("hbs");
 
+const bcrypt = require("bcryptjs") 
+
 require("./db/conn");
 
 const Profile = require("./models/reg");
@@ -47,6 +49,7 @@ app.get("/login",(req,res) => {
     res.render("login");
 
 })
+
 
 // create a new user in db
 
@@ -95,14 +98,26 @@ app.post("/login",async(req,res) => {
 
         const useremail = await Profile.findOne({emailID:emailID});
 
+        
+        const isMatch = await bcrypt.compare(password,useremail.password);
+
+        if(isMatch){
+            res.status(201).render("index");
+        }
+        else{
+            res.send("invalid credentials");
+        }
+              
+        /*
         if(useremail.password === password){
             res.status(201).render("index");
         }
         else{
-            res.send("invalid password");
+            res.send("invalid credentials");
         }
+        
 
-        /*
+        
         res.send(useremail);
         console.log(useremail);
         console.log(`$email is {emailID} and password is ${password}`)
